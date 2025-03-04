@@ -3,201 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Senior Living Facility</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <img
-            src="images/golden-meadow-favicon-color.png"
-            alt="Golden Meadows Logo"
-          />
-          <h1>ClaireAI+ SRL Demo</h1>
-        </div>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section id="home">
-      <div class="hero">
-        <h2>ClaireAI+ SRL Demo</h2>
-        <p>Your loved one's comfort is our priority</p>
-        <a href="#services" class="cta-button">Explore Our Services</a>
-      </div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>ClaireAI+ SRL Demo</h1>
+      <p>A Place Where Care and Comfort Meet</p>
+      <button>Learn More</button>
     </section>
 
-    <section id="services">
-      <div class="section-alternating" style="background-color: #f5e8d0">
-        <div class="text">
-          <h2>Comprehensive Assisted Living for Seniors</h2>
-          <p>
-            Our Assisted Living program is designed to offer personalized care
-            that adapts to each resident's unique needs. We emphasize dignity,
-            privacy, and independence while providing assistance with daily
-            activities such as bathing, dressing, and medication management.
-            Residents enjoy a supportive environment where they can engage in
-            social activities and maintain an active, fulfilling lifestyle
-            within a safe community.
-          </p>
+    <!-- Services -->
+    <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-items">
+        <div class="service-item">
+          <img src="images/nurse.jpg" alt="Medical Care" />
+          <h3>24/7 Medical Care</h3>
+          <p>Comprehensive health services for our residents.</p>
         </div>
-        <div class="image">
-          <img src="images/assisted.jpg" alt="Assisted Living" />
+        <div class="service-item">
+          <img src="images/cooking.jpg" alt="Nutritious Meals" />
+          <h3>Assisted Living</h3>
+          <p>Support for daily activities with independence.</p>
         </div>
-      </div>
-
-      <div class="section-alternating" style="background-color: #c6a582">
-        <div class="image">
-          <img src="images/nurse.jpg" alt="24/7 Nursing Care" />
-        </div>
-        <div class="text">
-          <h2>24/7 Skilled Nursing Care for Peace of Mind</h2>
-          <p>
-            Our facility provides round-the-clock skilled nursing care, ensuring
-            that medical and personal care needs are met at any time, day or
-            night. With a compassionate and highly trained team of nurses, we
-            offer continuous monitoring, emergency response, and tailored care
-            plans for those with complex medical conditions. Our staff is always
-            ready to assist with medication administration, post-surgical care,
-            and chronic illness management, ensuring residents are always in the
-            best hands.
-          </p>
-        </div>
-      </div>
-
-      <div class="section-alternating" style="background-color: #c87b59">
-        <div class="text">
-          <h2>Engaging Daily Activities to Enrich Lives</h2>
-          <p>
-            Our community offers a wide range of thoughtfully designed daily
-            activities that stimulate both the mind and body. From
-            brain-boosting puzzles and games like chess to creative arts and
-            crafts, we focus on maintaining cognitive health and encouraging
-            social interaction. Physical activities such as yoga, light exercise
-            classes, and outdoor walks help improve mobility and overall
-            well-being. These programs are tailored to residents' preferences
-            and abilities, ensuring that everyone has the opportunity to
-            participate, grow, and thrive.
-          </p>
-        </div>
-        <div class="image">
-          <img src="images/chess.jpg" alt="Daily Activities" />
+        <div class="service-item">
+          <img src="images/chess.jpg" alt="Activities" />
+          <h3>Recreational Activities</h3>
+          <p>Engaging programs for physical and mental well-being.</p>
         </div>
       </div>
     </section>
 
-    <section id="testimonials">
+    <!-- Testimonials -->
+    <section class="testimonials">
       <h2>What Our Residents Say</h2>
-      <div class="carousel-container">
-        <div class="testimonial-carousel">
-          <div class="testimonial">
-            <p>
-              "Golden Meadows has been a blessing for our family. The staff is
-              caring and the atmosphere feels like home."
-            </p>
-            <h4>- John Doe, Family Member</h4>
-          </div>
-          <div class="testimonial">
-            <p>
-              "I love living here! The staff is always so helpful, and I enjoy
-              the daily activities with my friends."
-            </p>
-            <h4>- Jane Smith, Resident</h4>
-          </div>
-          <div class="testimonial">
-            <p>
-              "The community at Golden Meadows has made my mother feel at home.
-              We couldn't ask for better care."
-            </p>
-            <h4>- Emily Johnson, Family Member</h4>
-          </div>
+      <div class="testimonial-items">
+        <div class="testimonial-item">
+          <p>
+            "Golden Haven has given me a second family. The care is
+            outstanding!"
+          </p>
+          <h4>- Margaret L.</h4>
         </div>
-        <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
-        <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+        <div class="testimonial-item">
+          <p>"I feel safe, happy, and truly at home here."</p>
+          <h4>- Robert D.</h4>
+        </div>
       </div>
     </section>
-
-    <section id="about">
+    <section class="about">
       <h2>About Us</h2>
       <p>
-        At Golden Meadows, we are dedicated to providing exceptional care and a
-        comfortable living environment for seniors. Our mission is to enhance
-        the quality of life for each of our residents by offering a community
-        where they can live with dignity, respect, and peace of mind. With
-        decades of experience in senior care, we have built a reputation for
-        creating a warm, supportive, and home-like atmosphere where residents
-        can thrive.
+        At Golden Haven, we provide a warm and welcoming environment for seniors
+        to enjoy their golden years with dignity and care.
       </p>
     </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>
-        If you have any questions or would like to schedule a visit, feel free
-        to reach out to us using the information below:
-      </p>
-
-      <ul>
-        <li><strong>Phone:</strong> (555) 123-4567</li>
-        <li><strong>Email:</strong> info@seniorcareliving.com</li>
-        <li>
-          <strong>Address:</strong> 1234 Oakwood Avenue, Pleasantville, USA
-        </li>
-        <li>
-          <strong>Office Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM
-        </li>
-      </ul>
-
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
+    <!-- Contact -->
+    <section class="contact">
+      <h2>Get in Touch</h2>
+      <p>We'd love to hear from you! Contact us for more details.</p>
+      <button>Contact Us</button>
     </section>
 
+    <!-- DO NOT REMOVE SCRIPT: Beginning of embed script -->
+    <div id="clx-drawer"></div>
+    <script src="https://static.theconversioncloud.com/js/apikeywidget.js"></script>
     <script>
-      let currentIndex = 0;
-
-      function moveCarousel(direction) {
-        const carousel = document.querySelector(".testimonial-carousel");
-        const testimonials = document.querySelectorAll(".testimonial");
-        const totalTestimonials = testimonials.length;
-
-        currentIndex += direction;
-
-        if (currentIndex < 0) {
-          currentIndex = totalTestimonials - 1;
-        } else if (currentIndex >= totalTestimonials) {
-          currentIndex = 0;
-        }
-        percentage = 100 / totalTestimonials;
-        carousel.style.transform = `translateX(-${currentIndex * percentage}%)`;
-      }
+      TheConversionCloud.launch("ecd427d7-cfa6-4fc1-9b03-3dfe7c3c33eb");
     </script>
-
-    <footer>
-      <p>© 2024 Golden Meadows. All rights reserved.</p>
-    </footer>
+    <!-- DO NOT REMOVE SCRIPT: End of embed script -->
   </body>
 </html>
